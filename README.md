@@ -19,8 +19,6 @@ SecureSight is a fictional CCTV monitoring platform that connects up to 3 CCTV f
   - Camera name
   - Resolved/unresolved status
 
-### ⚙️ Optional Scope (if implemented)
-
 - **Incident Timeline (Bottom)**  
   A time-synced scrubber that visually represents when incidents occurred across all feeds. Clicking on a marker jumps to that point in the player.
 
@@ -47,3 +45,24 @@ npm install
 
 # 4. Run development server
 npm run dev
+
+
+
+## 🧠 Tech Decisions
+
+- **Next.js App Router** was chosen for its built-in support for file-based routing and API endpoints in one codebase.
+- **Prisma ORM** was used for data modeling, migrations, and seeding because of its DX and type safety.
+- **SQLite** was selected as the database for simplicity and ease of local development — perfect for quick iteration in small-scale apps.
+- **TailwindCSS** allowed fast UI development with consistent utility classes and responsive design.
+- **Zustand (or Context API)** was explored to manage app-wide state like current incident or player time.
+
+---
+
+## 💡 If I Had More Time…
+
+- ✅ Implement advanced filtering (by date, threat type, resolved/unresolved).
+- 🎥 Replace static video/image with real synced video playback.
+- 🧭 Polish the timeline with snap-to-event markers and hover previews.
+- 📈 Add analytics — incident frequency, most triggered camera, etc.
+- 👮‍♂️ Add authentication and user role logic (e.g., Guard vs Admin).
+- 📤 Webhooks or real-time updates (Socket.IO or polling) for new incidents.
