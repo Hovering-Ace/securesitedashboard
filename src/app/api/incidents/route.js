@@ -43,7 +43,7 @@ export async function GET(request) {
   } catch (error) {
     console.error('Failed to fetch incidents:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch incidents' },
+      { error: 'Failed to fetch incidents'+error },
       { status: 500 }
     );
   }
