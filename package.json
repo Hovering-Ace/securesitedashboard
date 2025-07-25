@@ -8,8 +8,7 @@
     "db:push": "prisma db push",
     "db:seed": "node prisma/seed.js",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "npm install --legacy-peer-deps"
+    "lint": "next lint"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
@@ -27,8 +26,8 @@
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@types/node": "^20.10.0",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "^18.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.7",
     "@eslint/eslintrc": "^3",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
